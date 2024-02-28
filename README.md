@@ -1,5 +1,7 @@
 #To DO APP
 
+This app has been deployed on Git Hub pages : https://malakabdalla.github.io/To-Do-App/
+
 Introduction of the project aim:
 This is an app that lists To dos in a list
 

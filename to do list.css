@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    background: #333;
+
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(200, 100%, 90%);
+    margin-bottom: 2rem;
+    margin-left: 9rem;
+
+}
+
+.todoitem {
+    outline: none;
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    padding: 0.90em 0.5em;
+    color: hsl(200, 100%, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-grid,
+.to-input-grid {
+    display: grid;
+    grid-template-columns: 200px 150px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.to-input-grid {
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.nameinput {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    padding: 1rem;
+
+    color: hsl(0, 0%, 100%);
+
+}
+
+.nameinput input:focus {
+    border: 1px solid hsl(200, 100%, 70%);
+}
+
+.button {
+    background: hsl(200, 100%, 50%, 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 50%);
+    padding: 1rem;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 50px;
+    padding-right: 90px;
+}
+
+.button:hover,
+.button:focus-visible {
+    background: hsl(200, 100%, 50%, 0.2);
+}
+
+.deletebutton {
+    background: hsl(0, 100%, 40%, 0.1);
+    border: 1px solid hsl(0, 100%, 40%);
+    color: hsl(0, 100%, 40%);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 50px;
+    padding-right: 90px;
+    border-radius: 0.25em;
+
+}
+
+.deletebutton:hover,
+.deletebutton:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+}
+
+.completebutton {
+    background: hsla(298, 81%, 48%, 0.1);
+    border: 1px solid hsl(273, 71%, 67%);
+    color: hsl(268, 82%, 67%);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 2.5rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 30px;
+    padding-right: 100px;
+    border-radius: 0.25em;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: black;
+}
